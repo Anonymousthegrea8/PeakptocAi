@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PeakprocAI | Premium AI Automation & Business Growth Systems</title>
+  <meta
+    name="description"
+    content="PeakprocAI helps businesses implement premium AI automation and modern business systems that streamline operations, improve execution, and support scalable growth."
+  />
+  <style>
+    :root {
+      --bg: #040814;
+      --panel: rgba(10, 18, 34, 0.78);
+      --panel-strong: rgba(10, 18, 34, 0.92);
+      --border: rgba(148, 163, 184, 0.14);
+      --text: #eaf2ff;
+      --muted: #94a3b8;
+      --primary: #4cc9ff;
+      --primary-dark: #10b8f5;
+      --accent: #22c55e;
+      --white: #ffffff;
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      --radius: 22px;
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.65;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(76, 201, 255, 0.08), transparent 28%),
+        radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.08), transparent 24%),
+        linear-gradient(180deg, #040814 0%, #060d19 48%, #030711 100%);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 96px 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin: 0 auto 52px;
+      text-align: center;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      color: var(--primary);
+      background: rgba(76, 201, 255, 0.08);
+      border: 1px solid rgba(76, 201, 255, 0.18);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #4cc9ff, #8b5cf6, #22c55e);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 8s linear infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(4, 8, 20, 0.68);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.28rem;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      color: var(--white);
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .nav-cta {
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #04111a !important;
+      font-weight: 700;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 124px 0 92px;
+      z-index: 1;
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+      -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+      animation: gridMove 25s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @keyframes gridMove {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(60px); }
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      filter: blur(110px);
+      z-index: 0;
+    }
+
+    .hero::before {
+      top: -240px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(76, 201, 255, 0.22) 0%, rgba(139, 92, 246, 0.14) 35%, transparent 68%);
+      animation: heroGlowOne 12s ease-in-out infinite alternate;
+    }
+
+    .hero::after {
+      top: 80px;
+      right: -120px;
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(circle, rgba(34, 197, 94, 0.16) 0%, transparent 68%);
+      animation: heroGlowTwo 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes heroGlowOne {
+      0% {
+        transform: translateX(-50%) scale(1);
+        opacity: 0.55;
+      }
+      100% {
+        transform: translateX(-50%) scale(1.18);
+        opacity: 0.92;
+      }
+    }
+
+    @keyframes heroGlowTwo {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.4;
+      }
+      100% {
+        transform: translateY(20px) scale(1.15);
+        opacity: 0.75;
+      }
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 920px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 4.2vw, 3.7rem);
+      line-height: 1.1;
+      letter-spacing: -1.2px;
+      margin-bottom: 18px;
+      max-width: 760px;
+      text-shadow: 0 0 24px rgba(76, 201, 255, 0.08);
+    }
+
+    .hero p {
+      max-width: 690px;
+      color: var(--muted);
+      font-size: 1.03rem;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #04111a;
+      box-shadow: 0 12px 35px rgba(76, 201, 255, 0.16);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      border-color: rgba(148, 163, 184, 0.18);
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(76, 201, 255, 0.38);
+    }
+
+    .btn-whatsapp {
+      background: #22c55e;
+      color: #04110a;
+      box-shadow: 0 12px 35px rgba(34, 197, 94, 0.16);
+    }
+
+    .btn-whatsapp:hover {
+      background: #16a34a;
+    }
+
+    .hero-proof {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 20px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      margin-bottom: 40px;
+    }
+
+    .hero-proof span::before {
+      content: "•";
+      color: var(--accent);
+      margin-right: 8px;
+    }
+
+    .trust-strip,
+    .cards-3,
+    .process-grid,
+    .case-grid,
+    .faq-grid,
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .trust-item,
+    .card,
+    .step,
+    .case-card,
+    .faq-item,
+    .industry-card {
+      background: linear-gradient(180deg, rgba(11, 18, 33, 0.96), rgba(8, 14, 26, 0.9));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .trust-item:hover,
+    .card:hover,
+    .step:hover,
+    .case-card:hover,
+    .faq-item:hover,
+    .industry-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(76, 201, 255, 0.22);
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--white);
+      margin-bottom: 6px;
+      font-size: 1.02rem;
+    }
+
+    .trust-item span,
+    .card p,
+    .step p,
+    .case-card p,
+    .faq-item p,
+    .industry-card p {
+      color: var(--muted);
+    }
+
+    .card.highlight {
+      background:
+        linear-gradient(135deg, rgba(76, 201, 255, 0.08), rgba(139, 92, 246, 0.04)),
+        linear-gradient(180deg, rgba(11, 18, 33, 0.96), rgba(8, 14, 26, 0.9));
+      border-color: rgba(76, 201, 255, 0.18);
+    }
+
+    .card-icon,
+    .step-number {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--primary);
+      background: rgba(76, 201, 255, 0.09);
+      border: 1px solid rgba(76, 201, 255, 0.18);
+      margin-bottom: 18px;
+    }
+
+    .card h3,
+    .step h3,
+    .case-card h3,
+    .faq-item h3,
+    .industry-card h3 {
+      color: var(--white);
+      font-size: 1.08rem;
+      margin-bottom: 12px;
+    }
+
+    .case-badge {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      color: #fb923c;
+      border: 1px solid rgba(251, 146, 60, 0.18);
+      background: rgba(251, 146, 60, 0.08);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .panel {
+      background: var(--panel-strong);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .panel h2,
+    .panel h3 {
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .panel p,
+    .panel li {
+      color: var(--muted);
+    }
+
+    .checklist,
+    .booking-bullets {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .checklist li::before {
+      content: "✓";
+      color: var(--accent);
+      font-weight: 700;
+      margin-right: 10px;
+    }
+
+    .booking-bullets li::before {
+      content: "•";
+      color: var(--primary);
+      margin-right: 10px;
+    }
+
+    .contact-note {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    .final-cta-box {
+      max-width: 940px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 56px 28px;
+      border-radius: 28px;
+      border: 1px solid rgba(76, 201, 255, 0.14);
+      background:
+        linear-gradient(135deg, rgba(76, 201, 255, 0.12), rgba(139, 92, 246, 0.06)),
+        rgba(10, 16, 27, 0.92);
+      box-shadow: var(--shadow);
+    }
+
+    .final-cta-box h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 14px;
+    }
+
+    .final-cta-box p {
+      color: var(--muted);
+      max-width: 690px;
+      margin: 0 auto 28px;
+    }
+
+    .final-cta-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    footer {
+      margin-top: 40px;
+      border-top: 1px solid rgba(148, 163, 184, 0.08);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.9fr;
+      gap: 24px;
+      padding: 42px 0 28px;
+    }
+
+    .footer-brand h3 {
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .footer-brand p,
+    .footer-links a,
+    .footer-contact a,
+    .footer-contact p {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .footer-links,
+    .footer-contact {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      color: var(--muted);
+      padding: 20px 0 36px;
+      border-top: 1px solid rgba(148, 163, 184, 0.06);
+      font-size: 0.94rem;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #22c55e;
+      color: #04110a;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      box-shadow: 0 12px 30px rgba(34, 197, 94, 0.24);
+      z-index: 1001;
+    }
+
+    .whatsapp-float:hover {
+      background: #16a34a;
+    }
+
+    @media (max-width: 980px) {
+      .trust-strip,
+      .cards-3,
+      .process-grid,
+      .case-grid,
+      .faq-grid,
+      .industries-grid,
+      .split,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 102px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav-links {
+        display: none;
+      }
+
+      .section {
+        padding: 74px 0;
+      }
+
+      .trust-item,
+      .card,
+      .step,
+      .case-card,
+      .faq-item,
+      .industry-card,
+      .panel {
+        padding: 24px;
+      }
+
+      .whatsapp-float {
+        right: 14px;
+        bottom: 14px;
+        padding: 12px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="whatsapp-float" href="https://wa.me/18034774825" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Peakproc<span>AI</span></a>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#case-study">Use Cases</a>
+          <a href="#industries">Industries</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="nav-cta">Book a Call</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="tag">Premium AI Agency • Business Growth Systems</div>
+
+        <h1>
+          Premium AI Systems<br>
+          <span class="gradient-text">For Smarter Business Growth</span>
+        </h1>
+
+        <p>
+          PeakprocAI helps businesses implement AI automation and modern
+          business systems that streamline operations, improve execution,
+          and support scalable growth.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://cal.com/peakprocai/intro-30-min-with-ayox-from-peakproc?overlayCalendar=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Free Strategy Session</a>
+          <a href="#services" class="btn btn-secondary">Explore Services</a>
+          <a href="https://wa.me/18034774825" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Chat on WhatsApp</a>
+        </div>
+
+        <div class="hero-proof">
+          <span>AI automation systems</span>
+          <span>Operational optimization</span>
+          <span>Growth infrastructure</span>
+        </div>
+
+        <div class="trust-strip">
+          <div class="trust-item">
+            <strong>Automate key workflows</strong>
+            <span>Reduce repetitive work and improve how your business operates.</span>
+          </div>
+          <div class="trust-item">
+            <strong>Improve growth systems</strong>
+            <span>Create more structure around how your business scales and executes.</span>
+          </div>
+          <div class="trust-item">
+            <strong>Operate with more clarity</strong>
+            <span>Build stronger systems that support growth without chaos.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>What PeakprocAI Helps Businesses Do</h2>
+        <p>
+          We focus on practical AI solutions and business systems that improve
+          execution, efficiency, and growth.
+        </p>
+      </div>
+
+      <div class="cards-3">
+        <div class="card highlight">
+          <div class="card-icon">01</div>
+          <h3>AI Automation for Businesses</h3>
+          <p>
+            We build automation systems that reduce manual work, streamline
+            execution, and improve operational efficiency.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">02</div>
+          <h3>Business Growth Systems</h3>
+          <p>
+            We help businesses build smarter acquisition and workflow systems
+            that support sustainable growth.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">03</div>
+          <h3>Business Systems Design</h3>
+          <p>
+            We design clearer internal systems so your business can operate
+            with more consistency, speed, and structure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>How We Work</h2>
+        <p>
+          Our approach is simple: understand the bottleneck, build the right
+          system, and improve it until it creates real business value.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Assess</h3>
+          <p>
+            We review your current operations, execution flow, and growth
+            bottlenecks to identify where better systems can help.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Build</h3>
+          <p>
+            We design and implement the workflows, automations, and business
+            structures that fit your goals.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Optimize</h3>
+          <p>
+            We refine the system so it continues improving speed, clarity,
+            execution, and business performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="case-study" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Example Use Cases</h2>
+        <p>
+          These examples show the kind of business outcomes PeakprocAI is built to support.
+        </p>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-card">
+          <span class="case-badge">Operations</span>
+          <h3>Reducing Manual Workflows</h3>
+          <p>
+            Businesses often lose time to repetitive processes that slow down
+            execution. PeakprocAI helps streamline those workflows into
+            more efficient systems.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <span class="case-badge">Growth</span>
+          <h3>Building Better Acquisition Systems</h3>
+          <p>
+            We help businesses create more structured systems around how they
+            attract, qualify, and convert better-fit clients.
+          </p>
+        </div>
+
+        <div class="case-card">
+          <span class="case-badge">Scale</span>
+          <h3>Creating Stronger Internal Systems</h3>
+          <p>
+            As businesses grow, weak systems create friction. PeakprocAI helps
+            replace that friction with structure, automation, and clarity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Industries We Support</h2>
+        <p>
+          PeakprocAI is designed for businesses that want better systems,
+          stronger execution, and smarter growth.
+        </p>
+      </div>
+
+      <div class="industries-grid">
+        <div class="industry-card">
+          <h3>Recruitment</h3>
+          <p>Helping recruitment-focused businesses improve systems and growth execution.</p>
+        </div>
+        <div class="industry-card">
+          <h3>Private Equity</h3>
+          <p>Supporting firms that need better workflows, targeting, and operational clarity.</p>
+        </div>
+        <div class="industry-card">
+          <h3>Real Estate & Biotech</h3>
+          <p>Helping businesses in complex industries create stronger internal and growth systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="panel">
+          <h2>About PeakprocAI</h2>
+          <p>
+            PeakprocAI helps businesses use AI and automation in a practical,
+            premium, business-first way. The goal is not more tools. The goal
+            is better systems.
+          </p>
+          <p style="margin-top:16px;">
+            We focus on building workflows and structures that make operations
+            smoother, execution stronger, and growth more predictable.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>What clients can expect</h3>
+          <ul class="checklist">
+            <li>Clear business-first strategy</li>
+            <li>Practical AI implementation</li>
+            <li>Less friction and more structure</li>
+            <li>Systems designed for real business value</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Frequently Asked Questions</h2>
+        <p>
+          A few common questions businesses usually ask before getting started.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>What kind of businesses do you work with?</h3>
+          <p>
+            We work with businesses that want stronger operations, smarter systems,
+            and better growth execution.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you offer custom solutions?</h3>
+          <p>
+            Yes. Every business has different bottlenecks, so we build systems
+            around your specific workflow and goals.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How is pricing handled?</h3>
+          <p>
+            Pricing is discussed during the strategy session once we understand your
+            needs, scope, and business goals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="panel">
+          <h2>Book a Free Strategy Session</h2>
+          <p>
+            We’ll look at your current systems, where the friction is, and what
+            kind of setup would create the most value for your business.
+          </p>
+
+          <ul class="booking-bullets">
+            <li>Review your current workflow</li>
+            <li>Identify operational bottlenecks</li>
+            <li>Map the fastest path to better systems</li>
+          </ul>
+
+          <a href="https://cal.com/peakprocai/intro-30-min-with-ayox-from-peakproc?overlayCalendar=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Booking Calendar</a>
+        </div>
+
+        <div class="panel">
+          <h3>Prefer WhatsApp?</h3>
+          <p>
+            If you want a faster conversation, send a message directly and we
+            can continue there.
+          </p>
+
+          <ul class="checklist" style="margin-top:20px;">
+            <li>Quick first contact</li>
+            <li>Simple conversation flow</li>
+            <li>Great for direct questions</li>
+          </ul>
+
+          <div style="margin-top:22px;">
+            <a href="https://wa.me/18034774825" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Message on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="split">
+        <div class="panel">
+          <h2>Send an Inquiry</h2>
+          <p>
+            Tell us about your project and what you need help with.
+            Submit your details and our team will review your request.
+          </p>
+
+          <a href="https://forms.clickup.com/90121415048/f/2kxufac8-672/OIQBMJESZ2W4WCJJW9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Submit Project Details
+          </a>
+
+          <p class="contact-note">
+            Or email directly at <a href="mailto:ayox@peakprocai.com">ayox@peakprocai.com</a>
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>Why businesses reach out</h3>
+          <p>
+            Most businesses do not need more complexity. They need stronger
+            systems, smoother execution, and better structure.
+          </p>
+
+          <ul class="checklist" style="margin-top:20px;">
+            <li>Improve business execution</li>
+            <li>Reduce manual work</li>
+            <li>Create more operational clarity</li>
+            <li>Support growth with better systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="final-cta-box">
+        <h2>Ready to build a smarter business system?</h2>
+        <p>
+          PeakprocAI helps businesses automate operations, improve execution,
+          and create stronger systems for premium growth.
+        </p>
+        <div class="final-cta-actions">
+          <a href="https://cal.com/peakprocai/intro-30-min-with-ayox-from-peakproc?overlayCalendar=true" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Call</a>
+          <a href="https://wa.me/18034774825" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">WhatsApp Us</a>
+          <a href="mailto:ayox@peakprocai.com" class="btn btn-secondary">Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>PeakprocAI</h3>
+        <p>
+          Premium AI automation and business systems designed to help businesses
+          operate better and grow smarter.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#case-study">Use Cases</a>
+        <a href="#industries">Industries</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-contact">
+        <a href="mailto:ayox@peakprocai.com">ayox@peakprocai.com</a>
+        <a href="https://wa.me/18034774825" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://cal.com/peakprocai/intro-30-min-with-ayox-from-peakproc?overlayCalendar=true" target="_blank" rel="noopener noreferrer">Booking</a>
+        <a href="https://forms.clickup.com/90121415048/f/2kxufac8-672/OIQBMJESZ2W4WCJJW9" target="_blank" rel="noopener noreferrer">Project Inquiry</a>
+        <p>PeakprocAI © 2026</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      Built for businesses that want better systems, smoother execution, and smarter growth.
+    </div>
+  </footer>
+</body>
+</html>
